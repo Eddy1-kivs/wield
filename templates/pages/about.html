@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body %}
+<body style="background:#FDFEF7;">
+    <div class="container-fluid p-0">
+        <div id="" class="" data-bs-ride="">
+            <div class="">
+                <div class="">
+                    <img class="w-100" src="static/images/womanspain-pink-web.jpeg" style="object-fit: cover;width: 100%;height: 50vh;" alt="Image">
+                    <div class=" d-flex flex-column align-items-center justify-content-center">
+                        <div class="cont" style="max-width: 900px;">
+                            <h1 class="">About Us</h1>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+       <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img class="img-fluid rounded mb-4 mb-lg-0" src="static/images/blackwomen.png" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <div class="text-left mb-4">
+{#                        <h5 class="text-dark text-uppercase mb-3" style="letter-spacing: 5px;">About Us</h5>#}
+                        <h1>Know more about Us</h1>
+                    </div>
+                    <p>Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet</p>
+{#                    <a href="" class="btn btn-outline-dark py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn More</a>#}
+                    <!-- Scrollable modal -->
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Learn more
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">About Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+                            <p>Aliquyam accusam clita nonumy ipsum sit sea clita ipsum clita, ipsum dolores amet voluptua duo dolores et sit ipsum rebum, sadipscing et erat eirmod diam kasd labore clita est. Diam sanctus gubergren sit rebum clita amet, sea est sea vero sed et. Sadipscing labore tempor at sit dolor clita consetetur diam. Diam ut diam tempor no et, lorem dolore invidunt no nonumy stet ea labore, dolor justo et sit gubergren diam sed sed no ipsum. Sit tempor ut nonumy elitr dolores justo aliquyam ipsum stet</p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Close</button>
+{#        <button type="button" class="btn btn-primary">Understood</button>#}
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+    <br>
+</body>
+<style>
+    .cont {
+  position: absolute;
+  top: 56%;
+  left: 25%;
+  transform: translate(-80%, -30%);
+  width: 30%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  background: #9C30A9;
+  color: #000;
+  border-radius: 10px;
+  text-align: center;
+}
+</style>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block body %}
+<body style="background:#FDFEF7;">
+<div class="container-fluid p-0">
+    <div id="" class="" data-bs-ride="">
+            <div class="">
+                <div class="">
+                    <img class="w-100" src="static/images/womanspain-pink-web.jpeg" style="object-fit: cover;width: 100%;height: 50vh;" alt="Image">
+                    <div class=" d-flex flex-column align-items-center justify-content-center">
+                        <div class="cont" style="max-width: 900px;">
+                            <h1 class="">Use this form to reach out to us</h1>
+                            <p>Wield is a global, feminist, membership, movement-support organization working to achieve gender justice and women’s human rights worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+        <div class="row g-0">
+            <div class="col-lg-6 py-6 px-5">
+                <form method="POST">
+                    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-{{message.tags}}">{{message}}</div>
+    {% endfor %}
+    {% endif %}
+        {% csrf_token %}
+        <fieldset class="form-group">
+<!--            <legend class="border-bottom mb-4">Join Now</legend>-->
+            {{form|crispy}}
+        </fieldset>
+                    <br>
+        <div class="form-group">
+            <button class="btn btn-outline-dark" type="submit">
+                Submit
+            </button>
+        </div>
+    </form>
+            </div>
+            <div class="col-lg-6" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <iframe class="position-relative w-100 h-100"
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d255284.8585826696!2d36.8246784!3d-1.277952!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2ske!4v1674780407111!5m2!1sen!2ske"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!--                    <iframe class="position-relative w-100 h-100"-->
+<!--                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"-->
+<!--                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    .cont {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  background: #9C30A9;
+  color: #000;
+  border-radius: 10px;
+  text-align: center;
+}
+</style>
+{% endblock %}
